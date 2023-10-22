@@ -1,0 +1,23 @@
+.logo{
+    color: #B3A492;
+    font-size: 32px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.nav-right ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-right ul li a{
+    text-decoration: none;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    color: #B3A492;
+    font-size: 14px;
+}

@@ -1,5 +1,5 @@
 import '../styles/main.css'
-import Link from 'next/link'
+import Navbar from '../components/Navbar'
 
 export const metadata = {
   title: 'Arman',
@@ -12,20 +12,8 @@ export default function RootLayout({children,}: {
   return (
     <html lang="en">
       <body>
-        <div className="nav">
-            <div className="nav-left">
-              <h2>Ecomm</h2>
-            </div>
-            <div className="nav-right">
-              <ul>
-                <li><Link href="/">Home</Link></li>
-                <li><Link href="/category">Category</Link></li>
-                <li><Link href="/cart">Cart</Link></li>
-                <li><Link href="/login">Login</Link></li>
-              </ul>
-            </div>
-        </div>
         <div className="app">
+          <Navbar/>
           {children}
         </div>
 
